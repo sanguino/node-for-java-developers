@@ -1,0 +1,29 @@
+{
+  "name": "todo-app-presentation",
+  "version": "1.0.0",
+  "description": "Todo app devops repository",
+  "main": "index.js",
+  "scripts": {
+    "marp:pdf": "marp slides.md --pdf -o out/slides.pdf --allow-local-files",
+    "premakeall": "rm -rf out/assets",
+    "postmakeall": "cp -R assets out && open out/slides.html",
+    "makeall": "node-sass themes/maik.scss themes/maik.css && marp slides.md  --theme-set themes/maik.css --output out/slides.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sanguino/todo-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanguino/todo-app/issues"
+  },
+  "homepage": "https://github.com/sanguino/todo-app#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.12.1"
+  },
+  "dependencies": {
+    "github-markdown-css": "^3.0.1",
+    "node-sass": "^4.12.0"
+  }
+}

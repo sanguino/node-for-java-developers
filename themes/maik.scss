@@ -1,0 +1,18 @@
+/*!
+ * Marp default theme.
+ *
+ * @theme default
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ */
+
+
+@import '../node_modules/github-markdown-css/github-markdown';
+@import '../node_modules/highlight.js/styles/monokai';
+@import 'maiktheme/original';
+@import 'maiktheme/fonts';
+@import 'maiktheme/override';
+
+
