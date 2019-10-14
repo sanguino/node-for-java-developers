@@ -608,20 +608,5 @@ Se pueden exportar un elemento, y solo uno, por defecto. Esto permite a quien lo
 
 
 
-En node se sigue usando `require` en vez de los modulos de ES6. Require es anterior a ES6 y tiene una interfaz parecida pero diferente. En node ya esta implementado el sistema de modulos de ES6 aunque hace falta un flag en la ejecucion ya que esta en beta. Por tanto si no se va a usar node en produccion, mejor aprende a usar modulos de ES6.
+En node se sigue usando `require` en vez de los modulos de ES6. Require es anterior a ES6 y tiene una interfaz parecida pero diferente. En node ya esta implementado el sistema de modulos de ES6 aunque hace falta un flag en la ejecucion. Por tanto mejor aprende a usar modulos de ES6, ya que va a ser el estandar en poco tiempo.
 
-### promises
-
-TBD
-
-### async await
-
-TBD
-
-### iteradores
-
-TBD
-
-### generadores
-
-TBD

@@ -3,11 +3,11 @@
 <!-- $size: 16:9 -->
 
 
-# Node js
+# Node js 101
 
 ---
 
-# ¿Que es node?
+# ¿What is node?
 
 ---
 
@@ -72,6 +72,7 @@ Node.js is an open-source, cross-platform, JavaScript runtime environment that e
 > Node.js’ package manager, npm, is the largest ecosystem of open source libraries in the world.
 
 > npm have over 1.000.000 packages.
+> npm is the maven of javascript
 
 ---
 
@@ -106,7 +107,7 @@ server.listen(8080);
 ---
 ### Package definition
 
-package.json
+`package.json` is the `.pom` of node.
 ``` json
   {
     "name": "package_name",
@@ -119,7 +120,7 @@ package.json
 
 ### Package definition
 
-package.json
+package.json example
 ``` json
 {
   "name": "package_name",
@@ -139,59 +140,254 @@ package.json
 
 ### node modules
 
+* node_modules is the folder in which npm save all the delendencies and subdependencies of your node app.
+* If you try to import a package inside node, it will try to found it inside node_modules.
+
 ![](assets/nodemodules.jpg)
 
 ---
 
+## JS, weird things
 
+* Everything is an object in Javascript, including functions (excepts primitives).
 
-Package.json
-Scripts
+```js
+function executeFunction(func, a, b) {
+  func(a, b);
+}
 
-https://medium.com/laboratoria-how-to/node-js-javascript-y-el-inicio-al-lado-oscuro-del-desarrollo-193b8cac9bed
+function suma(a,b) {
+	return a + b;
+}
 
-¿Como ejecuta node?
-Mono hilo, no bloqueante
+function multiplica(a,b) {
+	return a * b;
+}
 
-Es6
-Clases
-Arrows
-===
+executeFunction(suma, 2, 3); // 5
+executeFunction(multiplica, 2, 3); // 6
 
+```
 
-Callbacks
+---
+#### Functions as parameters
 
-Promesas
+```js
+function getFunc() {
+  let value = "test";
+  let func = function() { alert(value); }; //anonimous function asigned to a variable
+  return func;
+}
 
-Async Await
-
-
-
-
-
-PM2
-
-
-Clustering en node
-Forks y cia
-
-Express js
-
-Api test en node
-
-
-
-
-
-
-
-https://dzone.com/articles/node-cluster?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fwebdev
-
-What Is Node.js for Java Developers
-
+getFunc()(); // "test"
+```
 
 ---
 
-# Muchas gracias
+```js
+let sum = new Function('a', 'b', 'return a + b');
 
+alert( sum(1, 2) ); // 3
+```
+
+---
+
+### Java to JS
+
+https://github.com/sanguino/node-for-java-developers/blob/master/Java2ES6.md
+
+---
+
+#### Callbacks
+
+A callback is a function that is passed to another function. When the first function is done, it will run the callback function.
+
+``` js
+var fs = require("fs");
+var data = fs.readFileSync('input.txt');
+
+console.log(data.toString());
+console.log("Program Ended");
+
+//file content
+//Program Ended
+```
+
+``` js 
+var fs = require("fs");
+
+fs.readFile('input.txt', function (err, data) {
+   console.log(data.toString());
+});
+
+console.log("Program Ended");
+
+//Program Ended
+//file content
+```
+
+---
+
+### Callback hell
+
+``` js
+function httpClient (resource, cb) {
+  const baseURL = 'http://domain.com/api/'
+  return http.get(baseURL + resource, cb)
+}
+
+httpClient('users/1' function (user) {
+  httpClient('posts/' + user.id, function (post) {
+    httpClient('coments/' + post.id, function (comment) {
+      httpClient('likes/' + comment.id, function (like) {
+        httpClient('anotherResource/' + like.id, function (data) {
+          console.log(data)
+        })
+      })
+    })
+  })
+})
+```
+---
+
+### Promises
+
+``` js
+httpClient('users/1')
+.then(user => httpClient('posts/' + user.id)) 
+.then(post => httpClient('coments/' + post.id))
+.then(comment => httpClient('likes/' + comment.id))
+.then(like => httpClient('anotherResource/' + like.id))
+.then(result => {
+  console.log(result)
+})
+.catch(data => {
+  console.error(data)	
+});
+```
+---
+### Promises
+``` js
+function httpClient (resource, cb) {
+  const baseURL = 'http://domain.com/api/'
+  return http.get(baseURL + resource, cb)
+}
+```
+``` js 
+function httpClient (resource) {
+  const baseURL = 'http://domain.com/api/'
+  return new Promise((resolve, rejection) => {
+    $.get(baseURL + resource, (data) => {
+      resolve(data)
+    })
+    .fail(function(err) {
+      rejection(err)
+    })
+  })
+}
+```
+---
+### Async await
+```js
+async function getSomething () {
+    const user = await httpClient('users/1')
+    const post = await httpClient('posts/' + user.id)
+    const comment = await httpClient('coments/' + post.id)
+    const like = await httpClient('likes/' + comment.id)
+    const result = await httpClient('anotherResource/' + like.id)
+    console.log(result)
+}
+getSomething();
+```
+---
+
+### Promises all
+```js
+const promises = [
+    httpClient('users/1'),
+    httpClient('users/2'),
+    httpClient('users/3'),
+    httpClient('users/4'),
+    httpClient('users/5')
+];
+Promise.all(promises).then(users => { 
+  console.log(users);
+}).catch(err => { 
+  console.log(err)
+});
+```
+---
+# todo-app
+
+![](assets/demogods.jpg)
+
+---
+
+### clustering - node
+
+``` js 
+const cluster = require('cluster');
+const http = require('http');
+const numCPUs = require('os').cpus().length;
+
+if (cluster.isMaster) {
+  console.log(`Master ${process.pid} is running`);
+  for (let i = 0; i < numCPUs; i++) {
+    console.log(`Forking process number ${i}...`);
+    cluster.fork();
+  }
+} else {
+  console.log(`Worker ${process.pid} started and finished`);
+}
+process.exit();
+```
+
+``` bash
+$ node app.js
+
+Master 8463 is running
+Forking process number 0...
+Forking process number 1...
+Forking process number 2...
+Forking process number 3...
+Worker 8464 started and finished
+Worker 8465 started and finished
+Worker 8467 started and finished
+Worker 8466 started and finished
+```
+
+---
+
+### clustering - PM2
+
+![](assets/pm2.png)
+
+PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
+
+Starting an application in production mode is as easy as:
+
+``` bash
+$ pm2 start app.js
+```
+
+Clustering an application is as easy as:
+``` bash
+$ pm2 start app.js -i max
+```
+
+PM2 will load balance your cluster.
+
+---
+
+### clustering conclusions
+
+Clustering your Node.js applications to be scaled accross all CPUs available, without any code modifications, so you could have 1 node in each core, using all the capacity of your server.
+
+* If you use docker, don't use pm2 inside your containers.
+* If your app is an api rest calling a db, or anyother node stateless app, clustering is a good idea in any case, it will have better performance with low code cost.
+* If your app have state, you will need any other piece to share the state between the cluster. Redis use to be a good idea, it's fast and easy to use in node.
+
+---
+
+# Thanks!!
 
