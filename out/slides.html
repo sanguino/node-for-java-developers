@@ -1148,74 +1148,74 @@ article#presentation > svg > foreignObject > section[data-marpit-advanced-backgr
   height: 100%;
 }
 </style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button></div><article id="presentation"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h1>Node js</h1>
+<h1>Node js 101</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h1>¿Que es node?</h1>
+<h1>What is node?</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-marpit-fragments="4" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<p><img src="assets/nodelogo.png" alt="" /></p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<p><img src="assets/nodelogo.png" alt="x% center" /></p>
 <p>Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser.</p>
 <ul>
-<li data-marpit-fragment="1">Could be used for command line tools, scripting and for server-side services.</li>
-<li data-marpit-fragment="2">Is a single threaded engine which in background uses multiple threads to execute asynchronous code.</li>
-<li data-marpit-fragment="3">Opens the way to &quot;JavaScript everywhere&quot; paradigm.</li>
-<li data-marpit-fragment="4">Node.js uses an event-driven and non-blocking I/O model that makes it lightweight and efficient.</li>
+<li>Could be used for command line tools, scripting and for server-side services.</li>
+<li>Is a single threaded engine which in background uses multiple threads to execute asynchronous code.</li>
+<li>Node.js uses an event-driven and non-blocking I/O model that makes it lightweight and efficient.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="1" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<p><img src="assets/runtime.png" alt="" /></p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <ul>
-<li data-marpit-fragment="1">Node.js is a runtime, like JRE is</li>
+<li>Opens the way to &quot;JavaScript everywhere&quot; paradigm.</li>
+</ul>
+<p><img src="assets/jsevery.png" alt="x% center" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<p><img src="assets/runtime.png" alt="x% center" /></p>
+<ul>
+<li>Node.js is a runtime, like JRE is</li>
+<li>JavaScript is generally considered an interpreted language, but modern JavaScript engines no longer just interpret JavaScript, they compile it.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="3" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h3>Node.js parts</h3>
-<p><img src="assets/architecture.png" alt="" /></p>
+<p><img src="assets/architecture.png" alt="x% center" /></p>
 <ul>
-<li data-marpit-fragment="1">JavaScript is generally considered an interpreted language, but modern JavaScript engines no longer just interpret JavaScript, they compile it.</li>
-<li data-marpit-fragment="2">V8 provides the runtime environment in which your JavaScript app executes</li>
-<li data-marpit-fragment="3">The I/O operations are handled by libuv</li>
+<li>V8 provides the runtime environment in which your JavaScript app executes</li>
+<li>The I/O operations are handled by libuv</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="2" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h4>V8 engine</h4>
-<p><img src="assets/v8.png" alt="" /></p>
+<p><img src="assets/v8.png" alt="x% center" /></p>
 <ul>
-<li data-marpit-fragment="1">V8 is written in C++, and it’s continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.</li>
-<li data-marpit-fragment="2">JavaScript is internally compiled by V8 with <strong>just-in-time (JIT)</strong> compilation to speed up the execution.</li>
+<li>V8 is written in C++, and it's continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.</li>
+<li>JavaScript is internally compiled by V8 with <strong>just-in-time (JIT)</strong> compilation to speed up the execution.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-marpit-fragments="2" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h4>JIT</h4>
+<p><img src="assets/jit.png" alt="x% center" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h4>Libuv</h4>
-<p><img src="assets/iocompare.png" alt="" /></p>
+<p><img src="assets/iocompare.png" alt="x% center" /></p>
 <ul>
-<li data-marpit-fragment="1">
+<li>
 <p>Non-blocking I/O, you can initiate a data request without waiting for the response to any other request, in a nutshell, you can initiate i/o requests in parallel.</p>
 </li>
-<li data-marpit-fragment="2">
+<li>
 <p>This eliminates the need for multi-threading since the server can handle multiple requests at the same time.</p>
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h4>Resumen</h4>
-<p><img src="assets/resumen3.png" alt="" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h4>Resumen</h4>
-<p><img src="assets/resumen2.jpeg" alt="" /></p>
-</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<p><img src="assets/npmlogo.png" alt="" /></p>
-<blockquote>
-<p>Node.js’ package manager, npm, is the largest ecosystem of open source libraries in the world.</p>
-</blockquote>
-<blockquote>
-<p>npm have over 1.000.000 packages.</p>
-</blockquote>
+<h4>Resumen</h4>
+<p><img src="assets/resumen3.png" alt="x% center" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h4>Resumen</h4>
+<p><img src="assets/resumen2.jpeg" alt="x% center" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h2>How to write a node app</h2>
 <p>app.js</p>
 <pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello world'</span>);
@@ -1226,7 +1226,7 @@ Hello world
 $ 
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h3>Hello http world!</h3>
 <pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
 <span class="hljs-keyword">const</span> server = http.createServer(<span class="hljs-function">(<span class="hljs-params">request, response</span>) =&gt;</span> {
@@ -1238,9 +1238,18 @@ $
 server.listen(<span class="hljs-number">8080</span>);
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<p><img src="assets/npmlogo.png" alt="x% center" /></p>
+
+<blockquote>
+<p>Node.js package manager, npm, is the largest ecosystem of open source libraries in the world.</p>
+<p>npm have over 1.000.000 packages.</p>
+<p>npm is the maven of javascript</p>
+</blockquote>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h3>Package definition</h3>
-<p>package.json</p>
+<p><code>package.json</code> is the <code>.pom</code> of npm/node.</p>
 <pre><code class="language-json"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>  {
     <span class="hljs-attr">"name"</span>: <span class="hljs-string">"package_name"</span>,
     <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Package description"</span>,
@@ -1248,9 +1257,9 @@ server.listen(<span class="hljs-number">8080</span>);
   }
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
 <h3>Package definition</h3>
-<p>package.json</p>
+<p>package.json example</p>
 <pre><code class="language-json"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"package_name"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Package description"</span>,
@@ -1265,32 +1274,274 @@ server.listen(<span class="hljs-number">8080</span>);
 }
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h3>node modules</h3>
-<p><img src="assets/nodemodules.jpg" alt="" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<p>Package.json<br />
-Scripts</p>
-<p><a href="https://medium.com/laboratoria-how-to/node-js-javascript-y-el-inicio-al-lado-oscuro-del-desarrollo-193b8cac9bed">https://medium.com/laboratoria-how-to/node-js-javascript-y-el-inicio-al-lado-oscuro-del-desarrollo-193b8cac9bed</a></p>
-<p>¿Como ejecuta node?<br />
-Mono hilo, no bloqueante</p>
-<h1>Es6<br />
-Clases<br />
-Arrows</h1>
-<p>Callbacks</p>
-<p>Promesas</p>
-<p>Async Await</p>
-<p>PM2</p>
-<p>Clustering en node<br />
-Forks y cia</p>
-<p>Express js</p>
-<p>Api test en node</p>
-<p><a href="https://dzone.com/articles/node-cluster?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed:%20dzone%2Fwebdev">https://dzone.com/articles/node-cluster?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed: dzone%2Fwebdev</a></p>
-<p>What Is Node.js for Java Developers</p>
-</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
-<h1>Muchas gracias</h1>
+<h3>node modules</h3>
+<ul>
+<li>node_modules is the folder in which npm save all the delendencies and subdependencies of your node app.</li>
+<li>If you try to import a package inside node, it will try to found it inside node_modules.</li>
+</ul>
+<p><img src="assets/nodemodules.jpg" alt="x% center" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<p><img src="assets/weird.png" alt="x% center" /></p>
+<ul>
+<li>Everything is an object in Javascript, including functions (excepts primitives).</li>
+<li>Immediately-Invoked Function Expression</li>
+<li>Typeof null, Function, undefined, NaN, Infinity...</li>
+<li>Equal is not always equal</li>
+<li></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFunc</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> value = <span class="hljs-string">"test"</span>;
+  <span class="hljs-keyword">let</span> func = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ alert(value); }; <span class="hljs-comment">//anonimous function asigned to a variable</span>
+  <span class="hljs-keyword">return</span> func;
+}
+
+getFunc()(); <span class="hljs-comment">// "test"</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> sum = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'return a + b'</span>);
+
+alert( sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>) ); <span class="hljs-comment">// 3</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">executeFunction</span>(<span class="hljs-params">func, a, b</span>) </span>{
+  func(a, b);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">suma</span>(<span class="hljs-params">a,b</span>) </span>{
+	<span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">multiplica</span>(<span class="hljs-params">a,b</span>) </span>{
+	<span class="hljs-keyword">return</span> a * b;
+}
+
+executeFunction(suma, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// 5</span>
+executeFunction(multiplica, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// 6</span>
+
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-number">1</span> == <span class="hljs-number">1</span>; <span class="hljs-comment">//true</span>
+<span class="hljs-string">'foo'</span> == <span class="hljs-string">'foo'</span>; <span class="hljs-comment">//true</span>
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] == [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]; <span class="hljs-comment">//false</span>
+<span class="hljs-number">1</span> == <span class="hljs-string">'1'</span> <span class="hljs-comment">//true</span>
+<span class="hljs-number">0</span> == <span class="hljs-literal">false</span> <span class="hljs-comment">//true</span>
+<span class="hljs-string">''</span> == <span class="hljs-literal">false</span> <span class="hljs-comment">//true</span>
+<span class="hljs-string">''</span> == <span class="hljs-number">0</span> <span class="hljs-comment">//true</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">3</span>) == <span class="hljs-string">",,"</span>; <span class="hljs-comment">//true</span>
+
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">var</span> o1 = {},
+    o2 = {};
+    
+o1 == o2 <span class="hljs-comment">//false;</span>
+
+o1 &gt;= o2 <span class="hljs-comment">//true</span>
+o1 &lt;= o2 <span class="hljs-comment">//true</span>
+o1 != o2 <span class="hljs-comment">//true</span>
+o1 !== o2 <span class="hljs-comment">//true</span>
+
+
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-number">1</span> * <span class="hljs-string">'foo'</span>; <span class="hljs-comment">//NaN</span>
+<span class="hljs-number">1</span> * <span class="hljs-number">2</span>; <span class="hljs-comment">//2</span>
+<span class="hljs-string">'foo'</span> * <span class="hljs-number">1</span>; <span class="hljs-comment">//NaN</span>
+<span class="hljs-string">'foo'</span> + <span class="hljs-number">1</span>; <span class="hljs-comment">//'foo1'</span>
+
+{} + {} <span class="hljs-comment">//NaN</span>
+[] + []; <span class="hljs-comment">//""</span>
+[] + {}; <span class="hljs-comment">//[object Object]</span>
+
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;"><pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[]+(-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}) + (-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}-~<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{})
+
+</span></span></foreignObject></svg></code></pre>
+<p>42</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>
+([]+![])[+!+[]+!+[]+!+[]][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]](([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]])())[([]+!![])[+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]]](([][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]](([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]])())[([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]]](([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]])[+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[])+(+!+[]+!+[]+!+[]+!+[]+!+[]))+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]](([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]])())[([]+!![])[+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]]](([][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]][([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]](([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]])())[([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+![])[+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]]](([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]])[+[]]+(+!+[]+!+[]+!+[]+!+[])+(+!+[]+!+[]+!+[]))+([]+![])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]]()+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+![])[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+(+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]](+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[])+([]+[][+[]])[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+[][+!+[]])[+!+[]]+([]+([]+[])[([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+[][+!+[]])[+!+[]]+([]+![])[+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+!![])[+!+[]]+([]+!![])[+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]+([]+{})[+!+[]]+([]+!![])[+!+[]]])[+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]
+</span></span></foreignObject></svg></code></pre>
+<p>Strange thing</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Java to JS</h3>
+<p><a href="https://github.com/sanguino/node-for-java-developers/blob/master/Java2ES6.md">https://github.com/sanguino/node-for-java-developers/blob/master/Java2ES6.md</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h4>Callbacks</h4>
+<p>A callback is a function that is passed to another function. When the first function is done, it will run the callback function.</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"fs"</span>);
+<span class="hljs-keyword">var</span> data = fs.readFileSync(<span class="hljs-string">'input.txt'</span>);
+
+<span class="hljs-built_in">console</span>.log(data.toString());
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Program Ended"</span>);
+
+<span class="hljs-comment">//file content</span>
+<span class="hljs-comment">//Program Ended</span>
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"fs"</span>);
+
+fs.readFile(<span class="hljs-string">'input.txt'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, data</span>) </span>{
+   <span class="hljs-built_in">console</span>.log(data.toString());
+});
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Program Ended"</span>);
+
+<span class="hljs-comment">//Program Ended</span>
+<span class="hljs-comment">//file content</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Callback hell</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">httpClient</span> (<span class="hljs-params">resource, cb</span>) </span>{
+  <span class="hljs-keyword">const</span> baseURL = <span class="hljs-string">'http://domain.com/api/'</span>
+  <span class="hljs-keyword">return</span> http.get(baseURL + resource, cb)
+}
+
+httpClient(<span class="hljs-string">'users/1'</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+  httpClient(<span class="hljs-string">'posts/'</span> + user.id, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">post</span>) </span>{
+    httpClient(<span class="hljs-string">'coments/'</span> + post.id, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">comment</span>) </span>{
+      httpClient(<span class="hljs-string">'likes/'</span> + comment.id, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">like</span>) </span>{
+        httpClient(<span class="hljs-string">'anotherResource/'</span> + like.id, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+          <span class="hljs-built_in">console</span>.log(data)
+        })
+      })
+    })
+  })
+})
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Promises</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>httpClient(<span class="hljs-string">'users/1'</span>)
+.then(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> httpClient(<span class="hljs-string">'posts/'</span> + user.id)) 
+.then(<span class="hljs-function"><span class="hljs-params">post</span> =&gt;</span> httpClient(<span class="hljs-string">'coments/'</span> + post.id))
+.then(<span class="hljs-function"><span class="hljs-params">comment</span> =&gt;</span> httpClient(<span class="hljs-string">'likes/'</span> + comment.id))
+.then(<span class="hljs-function"><span class="hljs-params">like</span> =&gt;</span> httpClient(<span class="hljs-string">'anotherResource/'</span> + like.id))
+.then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(result)
+})
+.catch(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.error(data)	
+});
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Promises</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">httpClient</span> (<span class="hljs-params">resource, cb</span>) </span>{
+  <span class="hljs-keyword">const</span> baseURL = <span class="hljs-string">'http://domain.com/api/'</span>
+  <span class="hljs-keyword">return</span> http.get(baseURL + resource, cb)
+}
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">httpClient</span> (<span class="hljs-params">resource</span>) </span>{
+  <span class="hljs-keyword">const</span> baseURL = <span class="hljs-string">'http://domain.com/api/'</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, rejection</span>) =&gt;</span> {
+    $.<span class="hljs-keyword">get</span>(baseURL + resource, (data) =&gt; {
+      resolve(data)
+    })
+    .fail(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+      rejection(err)
+    })
+  })
+}
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Async await</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSomething</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> httpClient(<span class="hljs-string">'users/1'</span>)
+    <span class="hljs-keyword">const</span> post = <span class="hljs-keyword">await</span> httpClient(<span class="hljs-string">'posts/'</span> + user.id)
+    <span class="hljs-keyword">const</span> comment = <span class="hljs-keyword">await</span> httpClient(<span class="hljs-string">'coments/'</span> + post.id)
+    <span class="hljs-keyword">const</span> like = <span class="hljs-keyword">await</span> httpClient(<span class="hljs-string">'likes/'</span> + comment.id)
+    <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> httpClient(<span class="hljs-string">'anotherResource/'</span> + like.id)
+    <span class="hljs-built_in">console</span>.log(result)
+}
+getSomething();
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>Promises all</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> promises = [
+    httpClient(<span class="hljs-string">'users/1'</span>),
+    httpClient(<span class="hljs-string">'users/2'</span>),
+    httpClient(<span class="hljs-string">'users/3'</span>),
+    httpClient(<span class="hljs-string">'users/4'</span>),
+    httpClient(<span class="hljs-string">'users/5'</span>)
+];
+<span class="hljs-built_in">Promise</span>.all(promises).then(<span class="hljs-function"><span class="hljs-params">users</span> =&gt;</span> { 
+  <span class="hljs-built_in">console</span>.log(users);
+}).catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> { 
+  <span class="hljs-built_in">console</span>.log(err)
+});
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h1>todo-app</h1>
+<p><img src="assets/demogods.jpg" alt="x% center" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>clustering - node</h3>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cluster'</span>);
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">const</span> numCPUs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'os'</span>).cpus().length;
+
+<span class="hljs-keyword">if</span> (cluster.isMaster) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Master <span class="hljs-subst">${process.pid}</span> is running`</span>);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; numCPUs; i++) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Forking process number <span class="hljs-subst">${i}</span>...`</span>);
+    cluster.fork();
+  }
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Worker <span class="hljs-subst">${process.pid}</span> started and finished`</span>);
+}
+process.exit();
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-bash"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>$ node app.js
+
+Master 8463 is running
+Forking process number 0...
+Forking process number 1...
+Forking process number 2...
+Forking process number 3...
+Worker 8464 started and finished
+Worker 8465 started and finished
+Worker 8467 started and finished
+Worker 8466 started and finished
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>clustering - PM2</h3>
+<p><img src="assets/pm2.png" alt="x% center" /></p>
+<p>PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.</p>
+<p>Starting an application in production mode is as easy as:</p>
+<pre><code class="language-bash"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>$ pm2 start app.js
+</span></span></foreignObject></svg></code></pre>
+<p>Clustering an application is as easy as:</p>
+<pre><code class="language-bash"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>$ pm2 start app.js -i max
+</span></span></foreignObject></svg></code></pre>
+<p>PM2 will load balance your cluster.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h3>clustering conclusions</h3>
+<p>Clustering your Node.js applications to be scaled accross all CPUs available, without any code modifications, so you could have 1 node in each core, using all the capacity of your server.</p>
+<ul>
+<li>If you use docker, don't use pm2 inside your containers.</li>
+<li>If your app is an api rest calling a db, or anyother node stateless app, clustering is a good idea in any case, it will have better performance with low code cost.</li>
+<li>If your app have state, you will need any other piece to share the state between the cluster. Redis use to be a good idea, it's fast and easy to use in node.</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-class="invert" data-theme="default" class="invert" style="--class:invert;--theme:default;">
+<h1>Thanks!!</h1>
 </section>
 </foreignObject></svg></article><script>!function(){"use strict";const t=()=>"Apple Computer, Inc."===navigator.vendor?[e]:[];function e(t){Array.from(document.getElementsByTagName("svg"),e=>{if(e.hasAttribute("data-marpit-svg")){const{clientHeight:r,clientWidth:a}=e;e.style.transform||(e.style.transform="translateZ(0)");const i=t||e.currentScale||1,n=e.viewBox.baseVal.width/i,s=e.viewBox.baseVal.height/i,o=Math.min(r/s,a/n);Array.from(e.querySelectorAll(":scope > foreignObject"),t=>{const e=t.x.baseVal.value,i=t.y.baseVal.value;Array.from(t.querySelectorAll(":scope > section"),t=>{t.style.transformOrigin||(t.style.transformOrigin="0 0");const l=(a-o*n)/2-e,c=(r-o*s)/2-i;t.style.transform=`translate3d(${l}px,${c}px,0) scale(${o}) translate(${e}px,${i}px)`})})}})}const r="data-marp-fitting",a="data-marp-fitting-code",i="data-marp-fitting-math",n=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};!function(e=!0){const s=()=>{for(const e of t())e();Array.from(document.querySelectorAll(`svg[${r}="svg"]`),t=>{const e=t.firstChild,r=e.firstChild,{scrollWidth:s,scrollHeight:o}=r;let l,c=1;if(t.hasAttribute(a)&&(l=t.parentElement.parentElement),t.hasAttribute(i)&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft)-parseFloat(t.paddingRight));e&&(c=e)}const m=Math.max(s,c),p=Math.max(o,1),g=`0 0 ${m} ${p}`;n(e,"width",`${m}`),n(e,"height",`${p}`),n(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),n(t,"viewBox",g)&&t.classList.toggle("__reflow__")}),e&&window.requestAnimationFrame(s)};s()}()}();
 </script><script>!function(){"use strict";var e={from:function(e,t){var n=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),r=[].filter.call("string"==typeof e.slides?n.querySelectorAll(e.slides):e.slides||n.children,function(e){return"SCRIPT"!==e.nodeName}),i=r[0],l={},o=function(e,t){r[e]&&(c("deactivate",u(i,t)),i=r[e],c("activate",u(i,t)))},s=function(e,t){var n=r.indexOf(i)+e;c(e>0?"next":"prev",u(i,t))&&o(n,t)},a=function(e,t){l[e]=(l[e]||[]).filter(function(e){return e!==t})},c=function(e,t){return(l[e]||[]).reduce(function(e,n){return e&&!1!==n(t)},!0)},u=function(e,t){return(t=t||{}).index=r.indexOf(e),t.slide=e,t},d={on:function(e,t){return(l[e]||(l[e]=[])).push(t),a.bind(null,e,t)},off:a,fire:c,slide:function(e,t){if(!arguments.length)return r.indexOf(i);c("slide",u(r[e],t))&&o(e,t)},next:s.bind(null,1),prev:s.bind(null,-1),parent:n,slides:r};return(t||[]).forEach(function(e){e(d)}),o(0),d}},t=function(){return function(e){e.slides.forEach(function(e){e.addEventListener("keydown",function(e){(/INPUT|TEXTAREA|SELECT/.test(e.target.nodeName)||"true"===e.target.contentEditable)&&e.stopPropagation()})})}};function n(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.map(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{e.slides.map(e=>e.classList.remove("bespoke-marp-active")),t.slide.classList.add("bespoke-marp-active")})}function r(e=2e3){return t=>{let n;function r(){n&&clearTimeout(n),n=setTimeout(()=>{t.parent.classList.add("bespoke-marp-inactive")},e),t.parent.classList.remove("bespoke-marp-inactive")}document.addEventListener("mousedown",r),document.addEventListener("mousemove",r),document.addEventListener("touchend",r),setTimeout(r,0)}}function i(e){let t=0,n=0;const r=e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]),i=e=>void 0!==r[t][n+e],l=(i,l)=>{t=i,n=l,r.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const r=t<i||t===i&&n<=l;e.setAttribute("data-bespoke-marp-fragment",r?"active":"inactive"),t===i&&n===l?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fire("fragment",{slide:e.slides[i],index:i,fragments:r[i],fragmentIndex:l})};e.on("next",()=>{if(i(1))return l(t,n+1),!1;const e=t+1;r[e]&&l(e,0)}),e.on("prev",()=>{if(i(-1))return l(t,n-1),!1;const e=t-1;r[e]&&l(e,r[e].length-1)}),e.on("slide",({index:e,fragment:t})=>{let n=0;if(void 0!==t){const i=r[e];if(i){const{length:e}=i;n=-1===t?e-1:Math.min(Math.max(t,0),e-1)}}l(e,n)}),l(0,0)}var l,o=function(e,t){return e(t={exports:{}},t.exports),t.exports}(function(e){!function(){var t="undefined"!=typeof window&&void 0!==window.document?window.document:{},n=e.exports,r="undefined"!=typeof Element&&"ALLOW_KEYBOARD_INPUT"in Element,i=function(){for(var e,n=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],r=0,i=n.length,l={};r<i;r++)if((e=n[r])&&e[1]in t){for(r=0;r<e.length;r++)l[n[0][r]]=e[r];return l}return!1}(),l={change:i.fullscreenchange,error:i.fullscreenerror},o={request:function(e){return new Promise(function(n){var l=i.requestFullscreen,o=function(){this.off("change",o),n()}.bind(this);e=e||t.documentElement,/ Version\/5\.1(?:\.\d+)? Safari\//.test(navigator.userAgent)?e[l]():e[l](r?Element.ALLOW_KEYBOARD_INPUT:{}),this.on("change",o)}.bind(this))},exit:function(){return new Promise(function(e){if(this.isFullscreen){var n=function(){this.off("change",n),e()}.bind(this);t[i.exitFullscreen](),this.on("change",n)}else e()}.bind(this))},toggle:function(e){return this.isFullscreen?this.exit():this.request(e)},onchange:function(e){this.on("change",e)},onerror:function(e){this.on("error",e)},on:function(e,n){var r=l[e];r&&t.addEventListener(r,n,!1)},off:function(e,n){var r=l[e];r&&t.removeEventListener(r,n,!1)},raw:i};i?(Object.defineProperties(o,{isFullscreen:{get:function(){return Boolean(t[i.fullscreenElement])}},element:{enumerable:!0,get:function(){return t[i.fullscreenElement]}},enabled:{enumerable:!0,get:function(){return Boolean(t[i.fullscreenEnabled])}}}),n?(e.exports=o,e.exports.default=o):window.screenfull=o):n?e.exports=!1:window.screenfull=!1}()});function s(e){e.fullscreen=()=>o&&o.toggle(document.body),document.addEventListener("keydown",t=>{70!==t.which&&122!==t.which||t.altKey||t.ctrlKey||t.metaKey||!o||!o.enabled||(e.fullscreen(),t.preventDefault())})}function a(e={}){const t=Object.assign({history:!0},e);return e=>{function n(){const t=parseInt(window.location.hash.slice(1),10);Number.isNaN(t)||function(t){const n=Math.max(0,Math.min(t,e.slides.length-1));n!==e.slide()&&e.slide(n)}(t-1)}setTimeout(()=>{n(),e.on("activate",e=>{t.history?window.location.hash=e.index+1:window.location.replace(`#${e.index+1}`)}),window.addEventListener("hashchange",n)},0)}}function c(e={}){const t=Object.assign({interval:200},e);return e=>{document.addEventListener("keydown",t=>{(32===t.which&&t.shiftKey||33===t.which||37===t.which||38===t.which)&&e.prev(),(32===t.which&&!t.shiftKey||34===t.which||39===t.which||40===t.which)&&e.next(),35===t.which&&e.slide(e.slides.length-1,{fragment:-1}),36===t.which&&e.slide(0)});let n,r,i=0;e.parent.addEventListener("wheel",o=>{let s=!1;const a=(e,t)=>{e&&(s=s||function(e,t){return function(e,t){const n=t===l.X?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]}(e,t)&&function(e,t){const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r}(getComputedStyle(e),t)}(e,t)),e&&e.parentElement&&a(e.parentElement,t)};if(0!==o.deltaX&&a(o.target,l.X),0!==o.deltaY&&a(o.target,l.Y),s)return;o.preventDefault(),r&&clearTimeout(r),r=setTimeout(()=>{n=0},t.interval);const c=Date.now()-i<t.interval,u=Math.sqrt(Math.pow(o.deltaX,2)+Math.pow(o.deltaY,2)),d=u<=n;if(n=u,c||d)return;let f;(o.deltaX>0||o.deltaY>0)&&(f="next"),(o.deltaX<0||o.deltaY<0)&&(f="prev"),f&&(e[f](),i=Date.now())})}}function u(e=".bespoke-marp-osc"){const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[data-bespoke-marp-osc=${JSON.stringify(e)}]`).forEach(n)};return o&&!o.enabled&&n("fullscreen",e=>e.style.display="none"),e=>{t.addEventListener("click",t=>{if(t.target instanceof HTMLElement)switch(t.target.dataset.bespokeMarpOsc){case"next":e.next();break;case"prev":e.prev();break;case"fullscreen":"function"==typeof e.fullscreen&&o&&o.enabled&&e.fullscreen()}}),e.parent.appendChild(t),e.on("activate",({index:t})=>{n("page",n=>n.textContent=`Page ${t+1} of ${e.slides.length}`)}),e.on("fragment",({index:t,fragments:r,fragmentIndex:i})=>{n("prev",e=>e.disabled=0===t&&0===i),n("next",n=>n.disabled=t===e.slides.length-1&&i===r.length-1)}),o&&o.onchange(()=>n("fullscreen",e=>e.classList.toggle("exit",o&&o.isFullscreen)))}}!function(e){e.X="X",e.Y="Y"}(l||(l={}));const d=".bespoke-progress-bar";function f(e){e.on("activate",t=>{document.querySelectorAll(d).forEach(n=>{n.style.flexBasis=`${100*t.index/(e.slides.length-1)}%`})})}function h(e={}){const t=Object.assign({slope:Math.tan(-35*Math.PI/180),swipeThreshold:30},e);return e=>{let n;const r=e.parent,i=e=>{const t=r.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};r.addEventListener("touchstart",e=>{n=1===e.touches.length?i(e.touches[0]):void 0}),r.addEventListener("touchmove",e=>{if(n)if(1===e.touches.length){e.preventDefault();const t=i(e.touches[0]),r=t.x-n.x,l=t.y-n.y;n.delta=Math.sqrt(Math.pow(Math.abs(r),2)+Math.pow(Math.abs(l),2)),n.radian=Math.atan2(r,l)}else n=void 0}),r.addEventListener("touchend",r=>{if(n){if(n.delta&&n.delta>=t.swipeThreshold){let i=n.radian-t.slope;i=(i+Math.PI)%(2*Math.PI)-Math.PI,e[i<0?"next":"prev"](),r.stopPropagation()}n=void 0}})}}e.from(document.getElementById("presentation"),[t(),n,r(),a({history:!1}),c(),s,f,h(),u(),i])}();
