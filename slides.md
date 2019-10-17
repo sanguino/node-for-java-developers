@@ -7,10 +7,6 @@
 
 ---
 
-# What is node?
-
----
-
 ![x% center](assets/nodelogo.png)
 
 Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. 
@@ -21,9 +17,13 @@ Node.js is an open-source, cross-platform, JavaScript runtime environment that e
 
 ---
 
-- Opens the way to "JavaScript everywhere" paradigm.
+### Opens the way to "JavaScript everywhere" paradigm.
 
-![x% center](assets/jsevery.png)
+&nbsp;
+&nbsp;
+
+![x% center](assets/jsevery2.png)
+
 
 
 ---
@@ -96,7 +96,7 @@ const server = http.createServer((request, response) => {
     response.writeHead(200);
     response.write('Hello http world!');
     response.end();
-})
+});
 
 server.listen(8080);
 ````
@@ -165,7 +165,6 @@ package.json example
 - Immediately-Invoked Function Expression
 - Typeof null, Function, undefined, NaN, Infinity...
 - Equal is not always equal
-- 
 
 ---
 
@@ -277,7 +276,7 @@ https://github.com/sanguino/node-for-java-developers/blob/master/Java2ES6.md
 
 #### Callbacks
 
-A callback is a function that is passed to another function. When the first function is done, it will run the callback function.
+A callback is a function that is passed to another function.
 
 ``` js
 var fs = require("fs");
@@ -290,13 +289,17 @@ console.log("Program Ended");
 //Program Ended
 ```
 
+---
+
+#### Callbacks
+
+When the first function is done, it will run the callback function.
+
 ``` js 
 var fs = require("fs");
-
 fs.readFile('input.txt', function (err, data) {
    console.log(data.toString());
 });
-
 console.log("Program Ended");
 
 //Program Ended
@@ -327,7 +330,7 @@ httpClient('users/1' function (user) {
 ```
 ---
 
-### Promises
+### Promises (~= Java Futures)
 
 ``` js
 httpClient('users/1')
@@ -344,12 +347,7 @@ httpClient('users/1')
 ```
 ---
 ### Promises
-``` js
-function httpClient (resource, cb) {
-  const baseURL = 'http://domain.com/api/'
-  return http.get(baseURL + resource, cb)
-}
-```
+
 ``` js 
 function httpClient (resource) {
   const baseURL = 'http://domain.com/api/'
@@ -363,19 +361,7 @@ function httpClient (resource) {
   })
 }
 ```
----
-### Async await
-```js
-async function getSomething () {
-    const user = await httpClient('users/1')
-    const post = await httpClient('posts/' + user.id)
-    const comment = await httpClient('coments/' + post.id)
-    const like = await httpClient('likes/' + comment.id)
-    const result = await httpClient('anotherResource/' + like.id)
-    console.log(result)
-}
-getSomething();
-```
+
 ---
 
 ### Promises all
@@ -393,11 +379,24 @@ Promise.all(promises).then(users => {
   console.log(err)
 });
 ```
+
+http://bluebirdjs.com/docs/getting-started.html
+
 ---
-# todo-app
 
-![x% center](assets/demogods.jpg)
+### Async await
 
+```js
+async function getSomething () {
+    const user = await httpClient('users/1')
+    const post = await httpClient('posts/' + user.id)
+    const comment = await httpClient('coments/' + post.id)
+    const like = await httpClient('likes/' + comment.id)
+    const result = await httpClient('anotherResource/' + like.id)
+    console.log(result)
+}
+getSomething();
+```
 ---
 
 ### clustering - node
@@ -418,6 +417,10 @@ if (cluster.isMaster) {
 }
 process.exit();
 ```
+
+---
+
+### clustering - node
 
 ``` bash
 $ node app.js
